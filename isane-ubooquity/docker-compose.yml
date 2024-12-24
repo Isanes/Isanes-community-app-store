@@ -1,0 +1,8 @@
+services:
+  ubooquity:
+    image: linuxserver/ubooquity:latest
+    ports:
+      - "2202:2202/tcp"
+    volumes:
+      - "/path/to/bind:/books"
+    restart: unless-stopped
